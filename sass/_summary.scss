@@ -1,0 +1,23 @@
+@use 'abstracts' as *;
+.summary{
+    background-color: #1e1e1e;
+    grid-column: full-start/ full-end;
+   grid-row: 7/8;
+   border-top: 1px solid rgba(255,255,255,.1);
+   &__text{
+    font-size: 1.3rem;
+    color:rgba(255,255,255,.3);
+     width: 85%;
+     margin: 0 auto;
+    line-height: 1.7;
+    font-weight: 200;
+    padding: 1.5rem 0 3rem 0;
+    @media only screen and (max-width:$bp-medium){
+        width: 92%;
+           }
+           @media only screen and (max-width:$bp-minute){
+           font-size: 1.1rem;
+         line-height: 1.6;
+               }
+   }
+}

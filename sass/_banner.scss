@@ -1,0 +1,97 @@
+@use 'abstracts' as *;
+
+.banner{
+    grid-column: center-start/ center-end;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5em 1%;
+     margin-top: 4rem;
+      @media only screen and (max-width:$bp-large){
+                margin-top: 2.5rem;
+             }
+    &__img{
+        width: 100%;
+    }
+    &__paragraph{
+        font-size: 2.2rem;
+        text-align: center;
+        padding-top: 5rem;
+        line-height: 1.5;
+        @media only screen and (max-width:$bp-medium){
+         padding-top: 2.3rem;
+           }
+           @media only screen and (max-width:$bp-little){
+            font-size: 2rem;
+            padding-top: 2rem;
+           }
+           @media only screen and (max-width:$bp-small){
+               font-size: 1.5rem;
+             }
+             @media only screen and (max-width:$bp-minute){
+              font-size: 1.3rem;
+              padding-top: 1rem;
+                  }
+          
+    }
+    
+   &__apps{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+    column-gap: 1.5rem;
+    @media only screen and (max-width:$bp-small){
+      margin-top: 3rem;
+         }
+      
+     img{
+        width: 20rem;
+        @media only screen and (max-width:$bp-small){
+            width: 12rem;
+             }
+          
+     }
+   }
+   &__authorities{
+    display: flex;
+    margin-top: 4rem;
+      @media only screen and (max-width:$bp-small){
+           flex-direction: column;
+             }
+   }
+   &__authority{
+    display: grid;
+    grid-template-columns: repeat(2, max-content min-content);
+    align-items: center;
+    column-gap: .8rem;
+      @media only screen and (max-width:$bp-small){
+               &:not(:last-child){
+                margin-bottom: .5rem;
+               }
+             }
+      @media only screen and (max-width:$bp-small){
+           column-gap: 0;
+             }
+   }
+   &__authority-text{
+    font-size: 1.7rem;
+    color:#87878a;
+    @media only screen and (max-width:$bp-little){
+        font-size: 1.4rem;
+       }
+   }
+   &__authority-img{
+    width: 3rem;
+    @media only screen and (max-width:$bp-little){
+      width: 2rem;
+       }
+    &--2{
+        width: 7rem;
+        @media only screen and (max-width:$bp-little){
+         width: 5rem;
+           }
+    }
+   }
+}

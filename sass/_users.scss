@@ -1,0 +1,73 @@
+@use 'abstracts' as *;
+.users{
+     background-image: linear-gradient(to right, rgb(29, 54, 128),  #141171), url(../images/footerBg.e4fed23a.png);
+     background-position: center;
+     background-repeat: no-repeat;
+     color: #fff;
+    grid-column: full-start/ full-end;
+    grid-row: 5/6;
+    display: flex;
+    padding: 2rem 7%;
+    align-items: center;
+    flex-wrap: wrap;
+    @media only screen and (max-width:$bp-medium){
+      padding: 2rem 5%;
+    }
+      &__text{
+     font-size: 3rem;
+     font-weight: 500;
+     display: flex;
+     align-items: center;
+     margin-right: 5rem;
+     display: flex;
+     flex-wrap: wrap;
+     @media only screen and (max-width:$bp-largest){
+      margin: 0 1rem 2rem 0;
+     }
+     @media only screen and (max-width:$bp-large){
+      margin: 0 0rem 2rem 0;
+     }
+     @media only screen and (max-width:$bp-little){
+      font-size: 2rem;
+     }
+     @media only screen and (max-width:$bp-small){
+      font-size: 1.7rem;
+     }
+     span{
+        font-size: 4.5rem;
+        padding: 1rem;
+        font-weight: 600;
+        @media only screen and (max-width:$bp-medium){
+              font-size: 2.5rem;
+             }
+        @media only screen and (max-width:$bp-little){
+              font-size: 2.2rem;
+             }
+             @media only screen and (max-width:$bp-small){
+              font-size: 1.6rem;
+             }
+     }
+  }
+
+  &__img{
+    width: 17rem;
+    cursor: pointer;
+    &:not(:last-child){
+        margin-right: 1rem;
+        @media only screen and (max-width:$bp-minute){
+          margin: 0 0 1rem 0;
+              }
+    }
+    @media only screen and (max-width:$bp-little){
+    width: 15rem;
+     }
+     @media only screen and (max-width:$bp-small){
+     width: 12rem;
+     }
+  }
+}
+
+
+
+
+

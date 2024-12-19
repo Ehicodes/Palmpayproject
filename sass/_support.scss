@@ -1,0 +1,107 @@
+@use 'abstracts' as *;
+.support{
+    grid-column: center-start/ center-end;
+    grid-row: 4/5;
+    padding: 5rem 3rem;  
+    @media only screen and (max-width:$bp-medium){
+    padding: 5rem 1rem;
+       }
+       @media only screen and (max-width:$bp-small){
+        padding: 5rem .3rem;
+           }
+    &__content{
+        display: flex;
+        background-color: #ebebeb;
+        border-radius: 2.5rem;
+        &:not(:last-child){
+            margin-bottom: 5rem;
+            @media only screen and (max-width:$bp-small){
+                margin-bottom: 3rem;
+                   }
+        }
+        @media only screen and (max-width:$bp-large){
+            flex-direction: column;
+        }
+    }
+    &__img{
+      width: 40%;
+      height: auto;
+      border-radius: 2.5rem;
+      @media only screen and (max-width:$bp-large){
+        width: 100%;
+      }
+      &--1{
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        @media only screen and (max-width:$bp-large){
+            border-top-left-radius: 2.5rem;
+            border-top-right-radius: 2.5rem;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+      }
+       &--2{
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        @media only screen and (max-width:$bp-large){
+            border-top-left-radius: 2.5rem;
+            border-top-right-radius: 2.5rem;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            order: -1;
+        }
+      }
+    }
+    &__texts{
+        flex: 1;
+        padding: 6rem 7rem;
+        @media only screen and (max-width:$bp-medium){
+            padding: 4rem 5rem;
+        }
+        @media only screen and (max-width:$bp-little){
+            padding: 3rem;
+           }
+           @media only screen and (max-width:$bp-small){
+          padding: 1.8rem;
+        }
+    }
+    &__header{
+        font-size: 3.8rem;
+        font-weight: 600;
+        margin-bottom: 3.5rem;
+        line-height: 1.2;
+        @media only screen and (max-width:$bp-medium){
+            font-size: 3.5rem;
+        }
+        @media only screen and (max-width:$bp-small){
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+    } 
+    &__paragraph, &__sub-texts{
+        font-size: 2rem;
+        line-height: 1.6;
+        @media only screen and (max-width:$bp-medium){
+            font-size: 1.8rem;
+        }
+        @media only screen and (max-width:$bp-small){
+            font-size: 1.3rem;
+            line-height: 1.4;
+        }
+    }
+    &__sub-texts{
+        margin: 4rem 0 3rem 0;
+        @media only screen and (max-width:$bp-small){
+            margin: 2rem 0 2rem 0;
+        }
+    }
+    .btn{
+        &--support{
+            width: 10rem;
+            border-radius: .9rem;
+            font-size: 1.5rem;
+        }
+
+    }
+
+}
